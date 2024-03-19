@@ -1,13 +1,10 @@
 module "aws_vpc" {
   source       = "./modules/vpc"
-  region       = var.region
-  project_name = var.project_name
-  user         = var.user
 
   vpc_parameters = {
     cidr_block = var.vpc_parameters.cidr_block
   }
-  
+
   subnet_public_parameters  = var.subnet_public_parameters
   subnet_private_parameters = var.subnet_private_parameters
 

@@ -1,7 +1,3 @@
-variable "region" {}
-variable "project_name" {}
-variable "user" {}
-
 variable "vpc_parameters" {
   description = "VPC parameters"
   type = object({

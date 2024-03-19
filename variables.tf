@@ -1,6 +1,15 @@
-variable "region" {}
-variable "project_name" {}
-variable "user" {}
+variable "region" {
+  type    = string
+  default = "us-east-2"
+}
+variable "project_name" {
+  type    = string
+  default = "terraform-project"
+}
+variable "user" {
+  type    = string
+  default = "default"
+}
 
 variable "vpc_parameters" {
   description = "VPC parameters"
@@ -10,20 +19,20 @@ variable "vpc_parameters" {
     enable_dns_hostnames = optional(bool, true)
   })
   default = {
-    cidr_block  = "10.0.0.0/16"
+    cidr_block = "10.0.0.0/16"
   }
 }
 
 variable "subnet_public_parameters" {
   description = "Subnet parameters"
-  type = list(string)
-  default = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  type        = list(string)
+  default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
 
 variable "subnet_private_parameters" {
   description = "Subnet parameters"
-  type = list(string)
-  default = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
+  type        = list(string)
+  default     = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 }
 
 variable "public_acl_rules" {
