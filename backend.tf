@@ -5,7 +5,7 @@ terraform {
     organization = "arnau-ad-org"
 
     workspaces {
-      name = "arnau-workspace"
+      name = "arnau-workspace-api-driven"
     }
   }
   required_providers {

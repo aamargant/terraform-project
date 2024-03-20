@@ -1,7 +1,7 @@
 variable "region" {
   description = "region to deploy"
-  type = string
-  default = "us-east-2"
+  type        = string
+  default     = "us-east-2"
 }
 
 variable "vpc_parameters" {
