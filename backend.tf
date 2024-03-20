@@ -1,5 +1,6 @@
 # Store the Terraform State File in S3 and Lock with DynamoDB
 terraform {
+  required_version = ">= 1.7.0"
   cloud {
     organization = "arnau-ad-org"
 
@@ -16,7 +17,5 @@ terraform {
 }
 
 provider "aws" {
-  shared_config_files      = [".aws/config"]
-  shared_credentials_files = [".aws/credentials"]
-  profile                  = "default"
+  region = var.region
 }

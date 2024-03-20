@@ -1,14 +1,7 @@
 variable "region" {
-  type    = string
+  description = "region to deploy"
+  type = string
   default = "us-east-2"
-}
-variable "project_name" {
-  type    = string
-  default = "terraform-project"
-}
-variable "user" {
-  type    = string
-  default = "default"
 }
 
 variable "vpc_parameters" {

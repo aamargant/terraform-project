@@ -1,5 +1,5 @@
 module "aws_vpc" {
-  source       = "./modules/vpc"
+  source = "./modules/vpc"
 
   vpc_parameters = {
     cidr_block = var.vpc_parameters.cidr_block
