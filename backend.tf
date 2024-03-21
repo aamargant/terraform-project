@@ -1,4 +1,3 @@
-# Store the Terraform State File in S3 and Lock with DynamoDB
 terraform {
   required_version = ">= 1.7.0"
   cloud {

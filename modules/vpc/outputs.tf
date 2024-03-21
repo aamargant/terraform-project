@@ -8,7 +8,6 @@ output "subnet_public_id" {
   description = "Export a list of the public subnets IDs"
 }
 
-# Export a list of the private subnets IDs
 output "subnet_private_id" {
   value       = [for s in aws_subnet.private : s.id]
   description = "Export a list of the private subnets IDs"
