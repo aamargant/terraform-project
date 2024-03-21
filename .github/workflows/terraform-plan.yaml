@@ -6,12 +6,11 @@ on:
 env:
   TF_CLOUD_ORGANIZATION: "arnau-ad-org"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
-  TF_WORKSPACE: "terraform-project"
+  TF_WORKSPACE: "arnau-workspace-api-driven"
   CONFIG_DIRECTORY: "./"
 
 jobs:
   terraform:
-    if: github.repository != 'aamargant/terraform-project'
     name: "Terraform Plan"
     runs-on: ubuntu-latest
     permissions:

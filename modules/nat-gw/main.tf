@@ -1,4 +1,3 @@
-# Allocate Elastic IP. (This EIP will be used for the Nat-Gateway in the Public Subnet AZ1)
 resource "aws_eip" "this" {
   count = length(var.subnet_public_id)
   domain    = "vpc"

@@ -1,5 +1,5 @@
 variable "region" {
-  description = "region to deploy"
+  description = "Region to deploy"
   type        = string
   default     = "us-east-2"
 }
@@ -17,13 +17,13 @@ variable "vpc_parameters" {
 }
 
 variable "subnet_public_parameters" {
-  description = "Subnet parameters"
+  description = "Public subnet parameters"
   type        = list(string)
   default     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
 
 variable "subnet_private_parameters" {
-  description = "Subnet parameters"
+  description = "Private subnet parameters"
   type        = list(string)
   default     = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 }
