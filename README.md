@@ -78,7 +78,7 @@ Test PR with lint validation and succesfull terraform plan: [PR #1](https://gith
 - `Terraform init` in the root directory and all the child modules.
 - Configure [Terraform Cloud](https://developer.hashicorp.com/terraform/cloud-docs/run/cli)
 - Configure your `backend.tf`configuration file with your workspace and organization.
-- Execute `Terraform plat` & `Terraform apply`
+- Execute `Terraform plan` & `Terraform apply`
 
 # Result:
 ![Alt text](aws-result.png?raw=true "VPC Architecture")
